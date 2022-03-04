@@ -1,4 +1,5 @@
 import turtle, pandas
+from state_location import get_state_corr
 from turtle import Screen
 from action import write_state
 #Basic Setup of the display
@@ -7,6 +8,12 @@ screen = Screen()
 screen.title("U.S. States Game")
 screen.addshape(image)
 turtle.shape(image)
+
+# """
+# Get state coor(x,y value)
+# get_state_corr()
+# """
+
 
 #Get the State Information from csv file:
 data = pandas.read_csv("50_states.csv")
